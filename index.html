@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="logo-container">
+           <div class="img-container">
+                <img src="./images/odin-logo.png">
+                <h1>ODIN</h1>
+            </div>
+            <p>Photo by <a href="">Hailey West</a> on <a href="">Unsplash</a></p>
+        </div>
+        <div class="form-container">
+            <div class="text">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You know you want to.
+            </div>
+            <form action="">
+                <fieldset>
+                    <Legend>Let's do this!</Legend>
+                    <div class="group">
+                        <div class="input-container">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first-name">
+                        </div>
+                        <div class="input-container">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-container">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="number" name="phone_number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="input-container">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" 
+                            pattern=".{8,}" 
+                            title="Password must contain at least 8 characters"
+                            required>
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm-password"
+                            pattern=".{8,}" 
+                            title="Password must contain at least 8 characters"
+                            required>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="btns">
+                    <button type="submit">Create Account</button>
+                    <div>Already have an account? <a href="">Log in</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
